@@ -1,0 +1,13 @@
+{
+  "name": "MQServer",
+  "version": "1.0.0",
+  "description": "Create MessaageQ Server",
+  "author": "Gil Fefer",
+  "main": "messageserver.js",
+  "scripts": {
+    "start": "node messageserver.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
