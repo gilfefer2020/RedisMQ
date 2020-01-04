@@ -5,6 +5,9 @@ Download the zip file and open it in your filder. You will find two folders:
 1. Server - contain all files to create the docker
 2. Client - A simple client to test it.
 
+Preperation
+1. Insode dockerfile change redisurl amd redisport to your Redis.
+
 Create and Run the docker under Linux
 1. Copy server files to your Linux
 2. To create the docker image run: docker build -t messageq .

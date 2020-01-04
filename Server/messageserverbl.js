@@ -13,14 +13,13 @@ var redisReady = false;
 module.exports = {
     InitializeBL: function (log) {
         logger = log;
-
         logger.debug('Enter InitializeBL()');
         try {
             // Create the Redis client and start the MQ server.
             if (dev == false) {
                 var redis = require('redis');
                 logger.debug('Create redis client');
-                client = redis.createClient(6379, "mqredis.sp0uzb.0001.usw2.cache.amazonaws.com");
+                client = redis.createClient(process.env.port, process.env.redisurl);
                 logger.debug('Connect to the redis');
                 client.on('connect', function () {
                     redisReady = true;

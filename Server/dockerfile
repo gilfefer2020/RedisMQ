@@ -1,5 +1,8 @@
 FROM node:8
 
+ENV redisurl="mqredis.sp0uzb.0001.usw2.cache.amazonaws.com"
+ENV redisport=6379
+
 # Create app directory
 WORKDIR /usr/src/app
 
