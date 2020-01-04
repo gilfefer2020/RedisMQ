@@ -11,4 +11,7 @@ Create and Run the docker under Linux
 3. To execute the docker run: docker run -t -i -p 3000:3000 messageq
 
 Test
-1. Run 
+1. Run testMQ.html
+2. Make sure the VM ip has the correct url with your IP
+3. Press the Help button to get a response from the server
+4. In the Create New Message enter a message and date-time and click the Echo Message button to register a message to be displayed.
